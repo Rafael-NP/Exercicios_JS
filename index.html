@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/java-script.png" type="image/x-icon">
+    <title>Exercícios de JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font: normal 1.2em Times, serif;
+            background-image: linear-gradient(45deg, #1b1b1b 40%, #0a5580);
+            color: #fff;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        main{
+            padding-top: 200px;
+            margin: auto;
+            text-align: center;
+        }
+        h1{
+            animation: fadeIn 2s forwards;
+            text-wrap: wrap;
+            margin: 0 5px 50px 5px;
+        }
+        span{
+            color: #cba135;
+            animation: fadeIn2 2.5s forwards;
+        }
+        p{
+            font: 100 1em Helvetica, sans-serif;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn{
+            0%{opacity: 0;}
+            30%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @keyframes fadeIn2{
+            0%{opacity: 0;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Principais exercícios de <span>JavaScript</span></h1>
+        <p>Feitos no curso do <span>Curso em Vídeo</span></p>
+    </main>
+    <script>
+        setTimeout( function(){
+            location.href="principal.html" 
+        }, 4000)
+    </script>
+</body>
+</html>
