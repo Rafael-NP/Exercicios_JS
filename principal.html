@@ -7,17 +7,27 @@
     <link rel="shortcut icon" href="./src/assets/java-script.png" type="image/x-icon">
     <title>Exercícios de JavaScript</title>
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <img src="./src/assets/java-script.png" alt="icone JavaScript">
-        <h1>Principais Exercícios de JavaScript</h1>
+        <h1>Exercícios de JavaScript</h1>
     </header>
     <main>
-        
+        <section id="hora">
+            <h1>Hora do Dia</h1>
+            <article>
+                <h3 id="msg"></h3>
+                <div id="foto">
+                    <img id="imagem" src="./src/assets/manha.jpg" alt="horario">
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Os exercícios foram feitos por <a href="https://github.com/Rafael-NP" target="_blank">Rafael Novaes Pereira</a> sobre orientação do professor Gustavo Guanabara no curso online de JavaScript do <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a>. O site foi feito como um compilado dos principais exercícios do curso.</p>
         <p>Ícone de JavaScript usado do <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>.</p>
+        <p id="di">&copy; 2025 - Todos os direitos reservados</p>
     </footer>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

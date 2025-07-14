@@ -11,7 +11,7 @@
     --preto: #1b1b1b;
 }
 body{
-    background: #0a5580;
+    background: var(--preto);
     font: normal 1em serif
 }
 header{
@@ -36,10 +36,45 @@ header img{
     width: 65px;
     height: 65px;
 }
+section{
+    background: var(--amarelo);
+    margin: 30px auto;
+    color: white;
+    height: 400px;
+    box-shadow: 0 0 3px white;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+section h1{
+    margin: 20px 0 30px 0;
+    color: var(--preto)
+}
+article{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 70%;
+    color: var(--preto);
+    margin: auto;
+    box-shadow: 2px 2px 4px var(--preto);
+}
+#hora article{
+    background: var(--preto);
+    color: var(--amareloClaro);
+}
+article img{
+    display: block;
+    margin: 20px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px var(--preto);
+}
 footer{
-    border-top: solid 2px var(--preto);
     margin-top: 30px;
-    box-shadow: 0 0 20px var(--preto);
+    margin-bottom: 0;
+    box-shadow: 0 0 7px var(--amareloClaro);
     background: var(--laranja);
     padding: 20px;
     font-weight: 550;
@@ -61,9 +96,18 @@ footer a::before{
     padding: 2px;
     content: '\1f517';
 }
+footer #di{
+    font-style: italic;
+}
 @media(width < 650px){
     header h1{
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding-left: 50px;
+    }
+}
+@media(width < 350px){
+    #hora img{
+        width: 100px;
+        height: 100px;
     }
 }
