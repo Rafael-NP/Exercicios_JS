@@ -100,7 +100,7 @@ article p{
     text-align: center;
 }
 #bhaskara input{
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5px;
 }
 .bas{
@@ -145,10 +145,10 @@ footer #di{
         padding-left: 50px;
     }
     #bhaskara{
-        height: 550px;
+        height: 530px;
     }
     #bhaskara article{
-        height: 400px;
+        height: 370px;
     }
 }
 @media(width < 350px){
@@ -157,6 +157,6 @@ footer #di{
         height: 100px;
     }
     #bhaskara article{
-        height: 450px;
+        height: 400px;
     }
 }
