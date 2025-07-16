@@ -40,7 +40,7 @@ section{
     background: var(--amarelo);
     margin: 30px auto;
     color: white;
-    height: 400px;
+    height: 450px;
     box-shadow: 0 0 3px white;
     padding: 20px;
     max-width: 800px;
@@ -51,11 +51,12 @@ section h1{
     color: var(--preto)
 }
 article{
-    background: white;
+    background: var(--preto);
     border-radius: 10px;
     padding: 15px;
     width: 70%;
-    color: var(--preto);
+    height: 300px;
+    color: var(--amareloClaro);
     margin: auto;
     box-shadow: 2px 2px 4px var(--preto);
 }
@@ -70,6 +71,45 @@ article img{
     height: 170px;
     border-radius: 20px;
     box-shadow: 2px 2px 3px var(--preto);
+}
+article .butao{
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px;
+    background: var(--laranja);
+    color: var(--preto);
+    border: 1px solid var(--laranja);
+    transition: .7s;
+    box-shadow: 0 0 5px var(--laranja), 0 0 10px var(--laranja);
+}
+article .butao:hover{
+    background: var(--preto);
+    color: var(--laranja);
+    box-shadow: 0 0 5px var(--laranja), 0 0 20px var(--laranja), 0 0 25px var(--laranja);
+}
+article .butao:active{
+    transition: .1s;
+    transform: scale(0.95);
+}
+article p{
+    font: sans-serif 1.3em;
+    line-height: 1.5em;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+#bhaskara input{
+    font-size: 1.2em;
+    padding: 5px;
+}
+.bas{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100px;
+    margin: 4px auto;
+    padding: 3px;
+    font-size: 13;
 }
 footer{
     margin-top: 30px;
@@ -104,10 +144,19 @@ footer #di{
         font-size: 1.4em;
         padding-left: 50px;
     }
+    #bhaskara{
+        height: 550px;
+    }
+    #bhaskara article{
+        height: 400px;
+    }
 }
 @media(width < 350px){
     #hora img{
         width: 100px;
         height: 100px;
+    }
+    #bhaskara article{
+        height: 450px;
     }
 }
