@@ -32,15 +32,34 @@
         <section id="bhaskara">
             <h1>Bhaskara</h1>
             <article>
-                <input type="number" placeholder="Valor de a" class="bas" id="a">
-                <input type="number" placeholder="valor de b" class="bas" id="b">
-                <input type="number" placeholder="valor de c" class="bas" id="c">
+                <input type="number" placeholder="Valor de a" id="a">
+                <input type="number" placeholder="valor de b" id="b">
+                <input type="number" placeholder="valor de c" id="c">
                 <input type="button" class="butao" value="Calcular" onclick="calcular()">
                 <div>
                     <p id="conta"></p>
                     <p id="x1"></p>
                     <p id="x2"></p>
                 </div>
+            </article>
+        </section>
+        <section id="contando">
+            <h1>Vamos Contar</h1>
+            <article>
+                <input type="number" placeholder="Início" id="cInicio">
+                <input type="number" placeholder="Fim" id="cFim">
+                <input type="number" placeholder="Passos" id="cPassos">
+                <input type="button" class="butao" value="Contar" onclick="contar()">
+                <div>
+                    <p id="cResult"></p>
+                </div>
+            </article>
+        </section>
+        <section id="tabuada">
+            <article>
+                <input type="number" placeholder="Digite o Número" id="tNum">
+                <input type="button" class="butao" value="Gerar Tabuada" onclick="tabuada()">
+                <select id="tTab" size="16"></select>
             </article>
         </section>
     </main>

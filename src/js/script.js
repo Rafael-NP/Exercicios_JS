@@ -21,7 +21,7 @@ function carregar(){
         document.getElementsByTagName('h1')[1].style.color = 'var(--amareloClaro)'
     }
 }
-// SITUAÇÃO DO ALUNO (DESAFIO)
+// MÉDIA DO ALUNO (DESAFIO)
 function verificar(){
     let nome = prompt('Qual é o nome do aluno?')
     let n1 = prompt(`Digite a primeira nota de ${nome}`)
@@ -32,10 +32,10 @@ function verificar(){
     let nota3 = Number(n3)
     let media = (nota1 + nota2 + nota3) / 3
     if(media > 6){
-        alert(`O(a) ${nome} foi aprovado(a) 😀, e obteve média de ${media} pontos.`)
+        alert(`O(a) ${nome} foi aprovado(a), e obteve média de ${media} pontos.`)
     }
     else{
-        alert(`O(a) ${nome} foi reprovado(a) 😭, e obteve média de ${media} pontos.`)
+        alert(`O(a) ${nome} foi reprovado(a), e obteve média de ${media} pontos.`)
     }
 }
 // BHASKARA (DESAFIO)
@@ -61,5 +61,57 @@ function calcular(){
         conta.innerHTML = `A equação é: <strong>(${a})x² + (${b})x + ${c}</strong></br>Delta é: <strong>${delta}</strong>`
         px1.innerHTML = `x¹ é: <strong>${resx1}`
         px2.innerHTML = `x² é: <strong>${resx2}`
+    }
+}
+// CONTADOR (EXERCÍCIO)
+function contar(){
+    let inicio = document.getElementById('cInicio')
+    let fim = document.getElementById('cFim')
+    let passos = document.getElementById('cPassos')
+    let result = document.getElementById('cResult')
+    if(inicio.value == 0 || fim.value == 0 || passos == 0){
+        alert('[ERRO] Faltam dados')
+    }
+    else{
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passos.value)
+        if(p <= 0){
+            alert('Passo inválido! Será considerado como 1')
+            p = 1
+        }
+        result.innerHTML = ''
+        if(i < f){
+            // CONTAGEM PROGRESSIVA
+            for(let c = i; c <= f; c += p){
+                result.innerHTML += `${c} \u{1F449} `
+            }
+        }
+        else{
+            // CONTAGEM REGRESSIVA
+            for(let c = i; c >= f; c -= p){
+                result.innerHTML += `${c} \u{1F449} `
+            }
+        }
+        result.innerHTML += `\u{1F3C1}`
+    }
+}
+// TABUADA (EXERCÍCIO)
+function tabuada(){
+    let num = document.getElementById('tNum')
+    let tab = document.getElementById('tTab')
+    if(num.value == 0){
+        alert('[ERRO] Digite um número')
+    }
+    else{
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while(c <= 100){
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item)
+            c++
+        }
     }
 }
